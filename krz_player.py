@@ -8,7 +8,7 @@ def play(file):
     song = pygame.mixer.Sound(file)
     song.set_volume(1)
     song.play()
-    print('playing ' + file)
+    # print('playing ' + file)
     return song
 
 def loop():
@@ -53,32 +53,34 @@ def wait(start_time, length):
 
 if __name__ == "__main__":
     
-    # play_intro()
-    # time_start = time.clock()
-    # number = input('1, 2, 3? ')
-    # wait(time_start, 61.8)
-
-    # play_verse('1', number)
-    # time_start = time.clock()
-    # wait(time_start, 31.6)
-
-    # play_chorus()
-    # time_start = time.clock()
-    # wait(time_start, 31.7)
-
-    # play_hold()
-    # time_start = time.clock()
-    # number = input('1, 2, 3? ')
-    # wait(time_start, 13.9)
+    play_intro()
+    time_start = time.clock()
+    wait(time_start, 1.8)
     
-    # play_verse(2, number)
-    # time_start = time.clock()
-    # wait(time_start, 31.7)
-
-    # play_chorus_with_jam()
-    # time_start = time.clock()
     number = input('1, 2, 3? ')
-    # wait(time_start, 61.7)
+    wait(time_start, 61.8)
+
+    play_verse('1', number)
+    time_start = time.clock()
+    wait(time_start, 31.6)
+
+    play_chorus()
+    time_start = time.clock()
+    wait(time_start, 31.7)
+
+    play_hold()
+    time_start = time.clock()
+    number = input('1, 2, 3? ')
+    wait(time_start, 13.9)
+    
+    play_verse(2, number)
+    time_start = time.clock()
+    wait(time_start, 31.7)
+
+    play_chorus_with_jam()
+    time_start = time.clock()
+    number = input('1, 2, 3? ')
+    wait(time_start, 62.7)
 
     play_verse(3, number)
     time_start = time.clock()
