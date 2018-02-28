@@ -37,7 +37,7 @@ def print_verse(n, m_string):
         elif m == 2:
             print('I never should have left you\non that awful day.\nI was happy then, until you stole my heart.\nand disappeared again.\n')
         elif m == 3:
-            print('I wish we\'d met\n before I ever learned to cry.\nWhen someone loved me briefly,\n and the said goodbye.\n')
+            print('I wish we\'d met\nbefore I ever learned to cry.\nWhen someone loved me briefly,\nand the said goodbye.\n')
     elif n == 2:
         if m == 1:
             print('The hurt you left behind\nwould truly never heal.\nA hole where my heart knew\nthere should be something real.\n')
