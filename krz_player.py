@@ -33,33 +33,33 @@ def print_verse(n, m_string):
     m = int(m_string)
     if n == 1:
         if m == 1:
-            print('When you left me\nMy heart was broken in two\nBut I patched it up\nAnd promised I would wait for you\n')
+            print('When you left me,\nmy heart was broken in two.\nBut I patched it up,\nand promised I would wait for you\n')
         elif m == 2:
             print('I never should have left you\non that awful day.\nI was happy then, until you stole my heart.\nand disappeared again.\n')
         elif m == 3:
-            print()
+            print('I wish we\'d met\n before I ever learned to cry.\nWhen someone loved me briefly,\n and the said goodbye.\n')
     elif n == 2:
         if m == 1:
-            print()
+            print('The hurt you left behind\nwould truly never heal.\nA hole where my heart knew\nthere should be something real.\n')
         elif m == 2:
             print('I never thought I\'d miss you\nbut I sorely did.\nI kept my hopes up\nwhen I should\'ve run and hid.\n')
         elif m == 3:
-            print('As long as you were gone\nI knew I that I was free\nFree from certainty\nThat other loves could never be\n')
+            print('As long as you were gone\nI knew I that I was free\nFree from certainty\nthat other loves could never be\n')
     elif n == 3:
         if m == 1:
-            print()
+            print('In time I thought that\nsomehow love would find a way.\nBut you waited too long,\ndarlin\' it\'s too late.\nIt\'s too late.\n')
         elif m == 2:
-            print('There were months I wished\nyou\'d come back every day.\nBut you waited too long,\ndarlin\' it\'s too late.\nIt\'s too late.')
+            print('There were months I wished\nyou\'d come back every day.\nBut you waited too long,\ndarlin\' it\'s too late.\nIt\'s too late.\n')
         elif m == 3:
-            print('After the years I know\nThat I’m bound to my fate\nBecause you waited too long\nDarling, it’s too late\nIt’s too late')
+            print('After the years I know\nThat I’m bound to my fate\nBecause you waited too long\nDarling, it’s too late\nIt’s too late\n')
     return
 
 def print_chorus():
-    print('It’s too late\nto love you now\nIt’s too late\nI’ve made my vow\n')
+    print('It’s too late\nto love you now.\nIt’s too late.\nI’ve made my vow.\n')
     return
 
 def print_outro_verse():
-    print('Another love came by\nAnd stole my heart away\nI wish that I could take it back\nIt’s too late\n')
+    print('Another love came by,\nAnd stole my heart away.\nI wish that I could take it back,\nIt’s too late.\n')
 
 def play_outro():
     play(file_dir + 'JUNEBUG Last Chorus and outro.ogg')
@@ -144,5 +144,8 @@ if __name__ == "__main__":
     print_chorus()
     wait(time_start, 31)
     print_outro_verse()
+    wait(time_start, 60)
+    print('...')
     wait(time_start, 100)
+    
 
