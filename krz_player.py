@@ -93,36 +93,36 @@ if __name__ == "__main__":
     wait(time_start, 20)
     print('...')
     wait(time_start, 30)
-    number = input('[1] When you left me ...\n[2] I never should have met you ...\n[3] I wish we\'d met before ...\nChoose: ')
+    number = input('\n[1] When you left me ...\n[2] I never should have met you ...\n[3] I wish we\'d met before ...\nChoose: ')
     print(' ')
     if not (number == '1' or number == '2' or number == '3'):
         number = str(random.randint(1, 3))
-    wait(time_start, 61.8)
+    wait(time_start, 61.7318)
 
     play_verse('1', number)
     time_start = time.clock()
     wait(time_start, 2)
     print_verse(1, number)
-    wait(time_start, 31.6)
+    wait(time_start, 31.64)
 
     play_chorus()
+    time_start = time.clock()
     wait(time_start, .5)
     print_chorus()
-    time_start = time.clock()
-    wait(time_start, 31.7)
+    wait(time_start, 31.9)
 
     play_hold()
     time_start = time.clock()
-    number = input('[1] The hurt you left behind ...\n[2] I never thought I\'d miss you ...\n[3] as long as you were gone ...\nChoose: ')
+    number = input('[1] The hurt you left behind ...\n[2] I never thought I\'d miss you ...\n[3] As long as you were gone ...\nChoose: ')
     print(' ')
     if not (number == '1' or number == '2' or number == '3'):
         number = str(random.randint(1, 3))
-    wait(time_start, 13.9)
+    wait(time_start, 15.7635)
     
     play_verse(2, number)
     print_verse(2, number)
     time_start = time.clock()
-    wait(time_start, 31.7)
+    wait(time_start, 31.727)
 
     play_chorus_with_jam()
     time_start = time.clock()
@@ -132,12 +132,12 @@ if __name__ == "__main__":
     print(' ')
     if not (number == '1' or number == '2' or number == '3'):
         number = str(random.randint(1, 3))
-    wait(time_start, 62.7)
+    wait(time_start, 63.685)
 
     play_verse(3, number)
     time_start = time.clock()
     print_verse(3, number)
-    wait(time_start, 31.7)
+    wait(time_start, 31.71)
 
     play_outro()
     time_start = time.clock()
@@ -145,7 +145,7 @@ if __name__ == "__main__":
     wait(time_start, 31)
     print_outro_verse()
     wait(time_start, 60)
-    print('...')
-    wait(time_start, 100)
+    print('END')
+    wait(time_start, 101)
     
 
