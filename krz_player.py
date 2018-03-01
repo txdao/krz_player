@@ -76,7 +76,7 @@ def display_text():
     pass
 
 def elapsed_time(start_time):
-    return time.clock() - start_time
+    return time.time() - start_time
 
 def wait(start_time, length):
     while elapsed_time(time_start) < length:
@@ -86,7 +86,7 @@ def wait(start_time, length):
 if __name__ == "__main__":
     
     play_intro()
-    time_start = time.clock()
+    time_start = time.time()
     print('...')
     wait(time_start, 10)
     print('...')
@@ -97,37 +97,37 @@ if __name__ == "__main__":
     print(' ')
     if not (number == '1' or number == '2' or number == '3'):
         number = str(random.randint(1, 3))
-    wait(time_start, 61.7318)
+    wait(time_start, 61.7355)
 
     play_verse('1', number)
-    time_start = time.clock()
+    time_start = time.time()
     wait(time_start, 2)
     print_verse(1, number)
-    wait(time_start, 31.64)
+    wait(time_start, 31.75)
 
     play_chorus()
-    time_start = time.clock()
+    time_start = time.time()
     wait(time_start, .5)
     print_chorus()
-    wait(time_start, 31.9)
+    wait(time_start, 31.89)
 
     play_hold()
-    time_start = time.clock()
+    time_start = time.time()
     number = input('[1] The hurt you left behind ...\n[2] I never thought I\'d miss you ...\n[3] As long as you were gone ...\nChoose: ')
     print(' ')
     if not (number == '1' or number == '2' or number == '3'):
         number = str(random.randint(1, 3))
-    wait(time_start, 15.7635)
+    wait(time_start, 15.785)
     
     play_verse(2, number)
     print_verse(2, number)
-    time_start = time.clock()
+    time_start = time.time()
     wait(time_start, 31.727)
 
     play_chorus_with_jam()
-    time_start = time.clock()
+    time_start = time.time()
     print_chorus()
-    wait(time_start, 32)
+    wait(time_start, 32.5)
     number = input('[1] I thought that somehow love would find a way ...\n[2] There were months I wished you\'d come back every day ...\n[3] After years I know that I\'m bound to my fate ...\nChoose: ')
     print(' ')
     if not (number == '1' or number == '2' or number == '3'):
@@ -135,12 +135,12 @@ if __name__ == "__main__":
     wait(time_start, 63.685)
 
     play_verse(3, number)
-    time_start = time.clock()
+    time_start = time.time()
     print_verse(3, number)
-    wait(time_start, 31.71)
+    wait(time_start, 31.62)
 
     play_outro()
-    time_start = time.clock()
+    time_start = time.time()
     print_chorus()
     wait(time_start, 31)
     print_outro_verse()
