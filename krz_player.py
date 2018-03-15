@@ -4,7 +4,7 @@
 import pygame
 import time
 import random
-file_dir = 'F:/KRZ/files/'
+file_dir = ''
 pygame.mixer.init()
 
 def play(file):
