@@ -10,5 +10,7 @@ Extract the music files into a folder named 'files' and change the file director
 
 # Future work
 [1] need to work out a way to sync the tracks more reliably and seamlessly. Currently, the timings fluctuate between each playing.
+
 [2] need to add looping so that the music doesn't cut off if the user does not enter a number.
+
 [3] would like to add scroll text that is synced with music.
